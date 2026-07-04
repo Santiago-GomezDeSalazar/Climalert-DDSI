@@ -1,3 +1,13 @@
 spring:
   application:
     name: climalert
+
+weather:
+  api:
+    url: https://api.weatherapi.com
+    key: CAMBIAR_POR_API_KEY
+    location: -34.6037,-58.3816
+
+sendgrid:
+  api-key: CAMBIAR_POR_SENDGRID_API_KEY
+  from-email: sgomezdesalazar@frba.utn.edu.ar
