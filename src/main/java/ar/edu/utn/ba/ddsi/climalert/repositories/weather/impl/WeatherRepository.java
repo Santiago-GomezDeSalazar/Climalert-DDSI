@@ -22,7 +22,11 @@ public class WeatherRepository implements IWeatherRepository {
   }
 
   @Override
-  public Weather obtenerUltimoClima(){
+  public Weather obtenerUltimoClima() {
+    if (historial.isEmpty()) {
+      return null;
+    }
+
     return historial.getLast();
   }
 }

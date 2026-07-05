@@ -28,11 +28,6 @@ public class WeatherService implements IWeatherService {
     return weather;
   }
 
-  @Override
-  public Weather obtenerUltimoClima() {
-    return weatherRepository.obtenerUltimoClima();
-  }
-
   public void analizarAlertas() {
     Weather weather = weatherRepository.obtenerUltimoClima();
     if (weather != null && weather.hayAlerta()) {
